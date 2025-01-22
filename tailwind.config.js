@@ -13,6 +13,15 @@ module.exports = {
         "nunito-light": ["Nunito-Light", "sans-serif"],
         "nunito-medium": ["Nunito-Medium", "sans-serif"],
       },
+      colors: {
+        primary: "#49129C",
+        secondary: {
+          DEFAULT: "#B40086",
+          100: "#C51297",
+          200: "#831266",
+        },
+        tertiary: "#EF2967",
+      },
     },
   },
   plugins: [],
