@@ -19,6 +19,14 @@ const HomeScreen = () => {
         Profile
       </CustomBottom>
 
+      <CustomBottom
+        className="mb-4"
+        onPress={() => router.push("/settings")}
+        color="tertiary"
+      >
+        Settings
+      </CustomBottom>
+
       {/* <Link href="/products" asChild>
         <CustomBottom color="secondary">Productos</CustomBottom>
       </Link> */}

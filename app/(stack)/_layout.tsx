@@ -25,6 +25,11 @@ const StackLayout = () => {
         name="profile/index"
         options={{ title: "Profile screen" }}
       />
+
+      <Stack.Screen
+        name="settings/index"
+        options={{ title: "Settings screen" }}
+      />
     </Stack>
   );
 };
