@@ -8,7 +8,7 @@ const StackLayout = () => {
 
   const onHeaderLeftClick = (canGoBack: boolean | undefined) => {
     if (canGoBack) {
-      navigation.dispatch(StackActions.pop(1));
+      navigation.dispatch(StackActions.pop());
       return;
     }
     navigation.dispatch(DrawerActions.toggleDrawer);
