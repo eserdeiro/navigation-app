@@ -6,7 +6,6 @@ import { Link, router } from "expo-router";
 const HomeScreen = () => {
   return (
     <View className="m-4">
-      <Text>HomeScreen</Text>
       <CustomBottom className="mb-4" onPress={() => router.push("/products")}>
         Productos
       </CustomBottom>
