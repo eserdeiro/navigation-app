@@ -15,6 +15,17 @@ const DrawerLayout = () => {
       }}
     >
       <Drawer.Screen
+        name="(tabs)"
+        options={{
+          headerShown: false,
+          drawerLabel: "Tabs",
+          title: "Tabsssss",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="home-outline" color={color} size={size} />
+          ),
+        }}
+      />
+      <Drawer.Screen
         name="schedule/index"
         options={{
           drawerLabel: "Schedule",
