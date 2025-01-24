@@ -20,11 +20,11 @@ const StackLayout = () => {
         // headerShown: false,
         headerShadowVisible: false,
         // contentStyle: {backgroundColor: 'red'}
-        headerLeft: ({ tintColor, canGoBack }) => (
+        headerLeft: ({ canGoBack }) => (
           <Ionicons
             name={canGoBack ? "arrow-back-outline" : "menu"}
-            size={20}
-            className="mr-4"
+            size={22}
+            className="pr-4"
             onPress={() => onHeaderLeftClick(canGoBack)}
           />
         ),

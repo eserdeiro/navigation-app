@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import React, { useLayoutEffect } from "react";
+import React, { useEffect } from "react";
 import { Redirect, useLocalSearchParams, useNavigation } from "expo-router";
 import { products } from "@/store/products.store";
 
@@ -15,21 +15,11 @@ const ProductScreen = () => {
 
   const { title, price, description } = product;
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     navigation.setOptions({
-      headerTitle: () => (
-        <Text
-          style={{
-            fontSize: 18,
-            lineHeight: 28,
-            fontFamily: "WorkSans-Black",
-          }}
-        >
-          {product.title}
-        </Text>
-      ),
+      title: title ?? "Producto",
     });
-  }, [navigation, title]);
+  }, [product]);
 
   return (
     <View className="px-5 mt-10">
