@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, useNavigation } from "expo-router";
+import { router, Stack, useNavigation } from "expo-router";
 import { View, Text } from "react-native";
 import { DrawerActions, StackActions } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
@@ -8,7 +8,7 @@ const StackLayout = () => {
 
   const onHeaderLeftClick = (canGoBack: boolean | undefined) => {
     if (canGoBack) {
-      navigation.dispatch(StackActions.pop());
+      router.back();
       return;
     }
     navigation.dispatch(DrawerActions.toggleDrawer);
